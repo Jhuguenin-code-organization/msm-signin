@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>
-      List of all bookmarks
+      <%=@current_user.first_name %>'s bookmarks
     </h1>
   </div>
 </div>
@@ -15,14 +15,6 @@
     </h2>
 
     <form action="/insert_bookmark" method="post">
-      <div>
-        <label for="user_id_box">
-          User
-        </label>
-
-        <input type="text" id="user_id_box" name="query_user_id">
-      </div>
-
       <div>
         <label for="movie_id_box">
           Movie
